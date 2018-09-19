@@ -1,7 +1,7 @@
 # Installation
 * clone or download zip this repo
 * install all dependencies
-    * do `npm install` in terminal
+    * do `npm install`
 * set up config file in `config/index.js`
 ```
 const config = {
