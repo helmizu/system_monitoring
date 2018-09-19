@@ -1,9 +1,9 @@
 const config = {
-    Interval : 1, //in Seconds
+    Interval : 60 * 5, //in Seconds
     DiskMonitoring : ['/dev/sdb5'], //array
     AlertRAM : 70, //persent use
     AlertStorage : 70, //persent use
-    SlackWebhookURL : 'https://hooks.slack.com/services/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'
+    SlackWebhookURL : '' //add your slack webhook url
 }
 
 module.exports = config
