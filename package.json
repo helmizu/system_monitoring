@@ -8,6 +8,7 @@
   "dependencies": {
     "async": "^2.6.1",
     "lodash": "^4.17.11",
+    "request": "^2.88.0",
     "systeminformation": "^3.45.6"
   }
 }
