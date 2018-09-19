@@ -3,7 +3,7 @@ const Slack = {}
 var SLACK_WEBHOOK_URL = ""
 
 Slack.init = function (URL) {
-    if (!URL || URL === "") {
+    if (!URL || URL === '') {
       throw new Error("You need to specify an SLACK_WEBHOOK_URL");
     }
     SLACK_WEBHOOK_URL = URL
@@ -19,8 +19,8 @@ Slack.send = function(message, cb) {
         body: slackPayload,
         json: true
     }, (err, result, body) => {
-        if (err) return console.log(`Error posting to Slack: ${err}`)
-        cb()
+        if (err) return cb(err, null, null)
+        cb(null, result, body)
     })
 }
 
