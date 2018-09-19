@@ -4,7 +4,7 @@ var SLACK_WEBHOOK_URL = ""
 
 Slack.init = function (URL) {
     if (!URL || URL === "") {
-        throw new Error("You need to specify an SLACK_WEBHOOK_URL");
+      throw new Error("You need to specify an SLACK_WEBHOOK_URL");
     }
     SLACK_WEBHOOK_URL = URL
 }
